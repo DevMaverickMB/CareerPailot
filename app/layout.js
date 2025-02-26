@@ -6,7 +6,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { dark, neobrutalism } from "@clerk/themes";
 import { Toaster } from "sonner";
 
-const inter = Inter({ subsets: ["Latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "CareerPailot: AI Career Coach",
