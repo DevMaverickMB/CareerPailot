@@ -225,6 +225,7 @@ export function EntryForm({ type, entries, onChange }) {
               size="sm"
               onClick={handleImproveDescription}
               disabled={isImproving || !watch("description")}
+              className="text-[#51faaa] hover:bg-[#51faaa] hover:text-black transition-all duration-300"
             >
               {isImproving ? (
                 <>
@@ -233,7 +234,7 @@ export function EntryForm({ type, entries, onChange }) {
                 </>
               ) : (
                 <>
-                  <Sparkles className="h-4 w-4 mr-2" />
+                  <Sparkles className="h-4 w-4 mr-0" />
                   Improve with AI
                 </>
               )}

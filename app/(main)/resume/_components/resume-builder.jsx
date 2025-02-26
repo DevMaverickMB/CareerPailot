@@ -376,7 +376,7 @@ export default function ResumeBuilder({ initialContent }) {
             <Button
               variant="link"
               type="button"
-              className="mb-2"
+              className="mb-2 text-[#51faaa]"
               onClick={() =>
                 setResumeMode(resumeMode === "preview" ? "edit" : "preview")
               }

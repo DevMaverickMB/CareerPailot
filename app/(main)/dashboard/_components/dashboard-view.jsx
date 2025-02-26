@@ -74,14 +74,14 @@ const DashboardView = ({ insights }) => {
   );
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-10">
       <div className="flex justify-between items-center">
-        <Badge variant="outline">Last updated: {lastUpdatedDate}</Badge>
+        <Badge variant="outline" className="text-[#51faaa] text-sm">Last updated: {lastUpdatedDate}</Badge>
       </div>
 
       {/* Market Overview Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        <Card>
+        <Card className="border hover:border-[#51faaa] hover:shadow-downward-green transition-all duration-300">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">
               Market Outlook
@@ -96,7 +96,7 @@ const DashboardView = ({ insights }) => {
           </CardContent>
         </Card>
 
-        <Card>
+        <Card className="border hover:border-[#51faaa] hover:shadow-downward-green transition-all duration-300">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">
               Industry Growth
@@ -111,7 +111,7 @@ const DashboardView = ({ insights }) => {
           </CardContent>
         </Card>
 
-        <Card>
+        <Card className="border hover:border-[#51faaa] hover:shadow-downward-green transition-all duration-300">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Demand Level</CardTitle>
             <BriefcaseIcon className="h-4 w-4 text-muted-foreground" />
@@ -126,7 +126,7 @@ const DashboardView = ({ insights }) => {
           </CardContent>
         </Card>
 
-        <Card>
+        <Card className="border hover:border-[#51faaa] hover:shadow-downward-green transition-all duration-300">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Top Skills</CardTitle>
             <Brain className="h-4 w-4 text-muted-foreground" />
@@ -146,7 +146,7 @@ const DashboardView = ({ insights }) => {
       {/* Salary Ranges Chart */}
       <Card className="col-span-4">
         <CardHeader>
-          <CardTitle>Salary Ranges by Role</CardTitle>
+          <CardTitle>Global alary Ranges by Role</CardTitle>
           <CardDescription>
             Displaying minimum, median, and maximum salaries (in thousands)
           </CardDescription>
@@ -155,8 +155,8 @@ const DashboardView = ({ insights }) => {
           <div className="h-[400px]">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={salaryData}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" />
+                <CartesianGrid strokeDasharray="3 3"/>
+                <XAxis dataKey="name"/>
                 <YAxis />
                 <Tooltip
                   content={({ active, payload, label }) => {
@@ -213,7 +213,7 @@ const DashboardView = ({ insights }) => {
           <CardContent>
             <div className="flex flex-wrap gap-2">
               {insights.recommendedSkills.map((skill) => (
-                <Badge key={skill} variant="outline">
+                <Badge key={skill} variant="outline" className="text-sm border hover:border-[#51faaa] hover:shadow-downward-green">
                   {skill}
                 </Badge>
               ))}

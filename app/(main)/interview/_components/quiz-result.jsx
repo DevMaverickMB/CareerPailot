@@ -1,6 +1,6 @@
 "use client";
 
-import { Trophy, CheckCircle2, XCircle } from "lucide-react";
+import { Trophy, CheckCircle2, XCircle, BookPlus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CardContent, CardFooter } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
@@ -28,8 +28,8 @@ export default function QuizResult({
 
         {/* Improvement Tip */}
         {result.improvementTip && (
-          <div className="bg-muted p-4 rounded-lg">
-            <p className="font-medium">Improvement Tip:</p>
+          <div className="border p-4 rounded-lg border-[#51faaa]">
+            <p className="font-medium text-yellow-500">Improvement Tip:</p>
             <p className="text-muted-foreground">{result.improvementTip}</p>
           </div>
         )}
