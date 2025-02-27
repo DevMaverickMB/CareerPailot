@@ -51,8 +51,8 @@ const Header = async () => {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button className="hover:bg-[#51faaa]">
-                  <StarsIcon className="h-4 w-4" />
-                  <span className="hidden md:block">Growth Tools</span>
+                  <StarsIcon className="h-4 w-4 animate-wobble"/>
+                  <span className="hidden md:block">AI Tools</span>
                   <ChevronDown className="h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
@@ -62,7 +62,7 @@ const Header = async () => {
                 <DropdownMenuItem>
                   <Link href={"/resume"} className="flex items-center gap-2 hover:text-[#51faaa]">
                     <FileTextIcon className="h-4 w-4" />
-                    <span>Build Resume</span>
+                    <span>AI Resume Maker</span>
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
@@ -71,13 +71,13 @@ const Header = async () => {
                     className="flex items-center gap-2 hover:text-[#51faaa]"
                   >
                     <PenBoxIcon className="h-4 w-4" />
-                    <span>Cover Letter</span>
+                    <span>AI Cover Letter</span>
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Link href={"/interview"} className="flex items-center gap-2 hover:text-[#51faaa]">
                     <GraduationCapIcon className="h-4 w-4" />
-                    <span>Interview Prep</span>
+                    <span>AI Interview Prep</span>
                   </Link>
                 </DropdownMenuItem>
                 {/* <DropdownMenuItem>Subscription</DropdownMenuItem> */}

@@ -82,6 +82,19 @@ export default {
         // Or use your border color (#51FAAA):
         "downward-green": "0 10px 25px -10px rgba(81, 250, 170, 0.5)", // Downward shadow in #51FAAA
       },
+      animation: {
+        wobble: 'wobble 1s ease-in-out infinite',
+      },
+      keyframes: {
+        wobble: {
+          '0%, 100%': { transform: 'translateX(0%)' },
+          '15%': { transform: 'translateX(-25%) rotate(-5deg)' },
+          '30%': { transform: 'translateX(20%) rotate(3deg)' },
+          '45%': { transform: 'translateX(-15%) rotate(-3deg)' },
+          '60%': { transform: 'translateX(10%) rotate(2deg)' },
+          '75%': { transform: 'translateX(-5%) rotate(-1deg)' },
+        },
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

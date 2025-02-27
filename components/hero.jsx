@@ -54,7 +54,7 @@ const HeroSection = () => {
                 Get Started
               </Button>
             </Link>
-            <Link href="https://www.youtube.com/">
+            <Link href="https://www.youtube.com/" target="_blank">
               <Button size="lg" variant="outline" className="px-8 border-[#51faaa] text-[#51faaa] hover:scale-105 hover:bg-black hover:text-[#51faaa] hover:shadow-downward-green transition-all duration-300">
                 Watch Demo
               </Button>
