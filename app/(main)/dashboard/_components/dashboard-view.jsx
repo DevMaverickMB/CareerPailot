@@ -146,7 +146,7 @@ const DashboardView = ({ insights }) => {
       {/* Salary Ranges Chart */}
       <Card className="col-span-4">
         <CardHeader>
-          <CardTitle>Global alary Ranges by Role</CardTitle>
+          <CardTitle>Global Salary Ranges by Role</CardTitle>
           <CardDescription>
             Displaying minimum, median, and maximum salaries (in thousands)
           </CardDescription>
