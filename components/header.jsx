@@ -35,7 +35,7 @@ const Header = async () => {
             alt="Logo"
             width={200}
             height={60}
-            className="h-12 py-1 w-auto object-contain"
+            className="h-10 sm:h-10 md:h-12 lg:h-12 xl:h-14 2xl:h-14 py-1 w-auto object-contain"
           />
         </Link>
 
